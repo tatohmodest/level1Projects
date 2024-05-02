@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Responsive.css">
+ <script>
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let icon = document.getElementById('icon');
+    icon.addEventListener('click', function() {
+        console.log("Icon clicked");
+        let toggleBar = document.getElementById('navbar');
+
+        if (toggleBar.style.width === "200px" || toggleBar.style.width === "") {
+            toggleBar.style.width = "0";
+        } else {
+            toggleBar.style.width = "200px";
+        }
+    });
+    
+let close = document.getElementById('close')
+close.addEventListener('click', function(){
+    let toggleBar = document.getElementById('navbar'); 
+    toggleBar.style.width = "0"
+})
+
+
+});
+ </script>
+</head>
+<body>
+   <header>
+    <h1>My Website</h1>
+    <nav id="navbar">
+        <span id="close" class="material-symbols-outlined close">
+            close
+            </span>
+        <ul>
+            <li>link 1</li>
+            <li>link 2</li>
+            <li>link 3</li>
+        </ul>
+    </nav>
+  
+    <span id="icon" class="material-symbols-outlined icon">
+        menu
+        </span>
+ 
+   </header> 
+
+   <div class="para">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nemo aperiam, numquam alias vero delectus impedit mollitia optio recusandae, unde neque cupiditate molestiae officia voluptatibus dolorem eum magnam itaque quae.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, odio molestias. Consequuntur recusandae laborum soluta, fuga repellat aut inventore alias mollitia nesciunt cum, vero a totam suscipit enim ullam similique.</p>
+</div>
+
+
+<div class="yes">
+
+<section class="grid">
+    <div>
+        <h1>Card One</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium praesentium adipisci id fugiat odit dolor, harum libero laboriosam voluptate, corrupti, veniam saepe! Odio corrupti, delectus libero vitae aliquid laudantium.</p>
+    </div>
+    <div>
+        <h1>Card two</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iure fugiat ut porro iusto aliquid reprehenderit, repellat consequatur molestias et adipisci repudiandae accusamus nobis officiis labore voluptates neque libero nesciunt.</p>
+    </div>
+    <div>
+        <h1>Card three</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium praesentium adipisci id fugiat odit dolor, harum libero laboriosam voluptate, corrupti, veniam saepe! Odio corrupti, delectus libero vitae aliquid laudantium.</p>
+    </div>
+    <div>
+        <h1>Card four</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium praesentium adipisci id fugiat odit dolor, harum libero laboriosam voluptate, corrupti, veniam saepe! Odio corrupti, delectus libero vitae aliquid laudantium.</p>
+    </div>
+    <div>
+        <h1>Card five</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium praesentium adipisci id fugiat odit dolor, harum libero laboriosam voluptate, corrupti, veniam saepe! Odio corrupti, delectus libero vitae aliquid laudantium.</p>
+    </div>
+</section>
+<footer>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi amet autem consectetur totam! Blanditiis sed deserunt obcaecati exercitationem ex qui omnis nesciunt quibusdam ullam aspernatur velit, expedita iste ab neque.
+</footer>
+</div>
+</body>
+</html>
